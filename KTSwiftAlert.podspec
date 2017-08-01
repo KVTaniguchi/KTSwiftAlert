@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author           = { 'kvtaniguchi' => 'ktaniguchi@urbn.com' }
   s.source           = { :git => 'https://github.com/kvtaniguchi/KTSwiftAlert.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'KTSwiftAlert/Classes/**/*'
 
