@@ -9,7 +9,7 @@
 import UIKit
 
 import URBNSwiftyConvenience
-import URBNSwiftAlert
+import KTSwiftAlert
 
 class ExampleViewController: UIViewController {
     
