@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KTSwiftAlert_Example' do
+  pod 'KTSwiftAlert', :path => '../'
+
+  target 'KTSwiftAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
