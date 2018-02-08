@@ -10,7 +10,7 @@ import Foundation
 
 public extension UIImage {
 
-//    typealias URBNConvenienceImageDrawBlock = (_ rect: CGRect, _ context: CGContext) -> ()
+    public typealias URBNConvenienceImageDrawBlock = (_ rect: CGRect, _ context: CGContext) -> ()
     
     public func tintedImage(color: UIColor) -> UIImage? {
         UIGraphicsBeginImageContext(self.size)
@@ -35,26 +35,25 @@ public extension UIImage {
         return newImage
     }
 
-    //TODO: Check this logic in a different PR. Seems brands aren't really using it.
-//    public static func imageDrawnWithKey(key: NSString, size: CGSize, drawBlock: URBNConvenienceImageDrawBlock) -> UIImage? {
-//        assert(size.width > 0 && size.height > 0, "Invalid image size (both dimensions must be greater than zero")
-//
-//        let imageCache = NSCache<NSString, UIImage>()
-//        guard var image = imageCache.object(forKey: key) else { return nil }
-//
-//        UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
-//        if let context = UIGraphicsGetCurrentContext() {
-//            drawBlock(CGRect(x: 0, y: 0, width: size.width, height: size.height), context)
-//
-//            guard let currentContext = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
-//
-//            image = currentContext
-//            imageCache.setObject(image, forKey: key)
-//            UIGraphicsEndImageContext()
-//        }
-//
-//        return image
-//    }
+    public static func imageDrawnWithKey(key: NSString, size: CGSize, drawBlock: URBNConvenienceImageDrawBlock) -> UIImage? {
+        assert(size.width > 0 && size.height > 0, "Invalid image size (both dimensions must be greater than zero")
+
+        let imageCache = NSCache<NSString, UIImage>()
+        guard var image = imageCache.object(forKey: key) else { return nil }
+
+        UIGraphicsBeginImageContextWithOptions(size, true, UIScreen.main.scale)
+        if let context = UIGraphicsGetCurrentContext() {
+            drawBlock(CGRect(x: 0, y: 0, width: size.width, height: size.height), context)
+
+            guard let currentContext = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+
+            image = currentContext
+            imageCache.setObject(image, forKey: key)
+            UIGraphicsEndImageContext()
+        }
+
+        return image
+    }
 
     public static func screenShot(view: UIView, afterScreenUpdates: Bool) -> UIImage? {
         UIGraphicsBeginImageContext(CGSize(width: view.frame.size.width, height: view.frame.size.height))

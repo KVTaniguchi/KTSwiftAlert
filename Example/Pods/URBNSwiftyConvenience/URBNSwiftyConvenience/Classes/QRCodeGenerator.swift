@@ -34,7 +34,7 @@ public extension CIImage {
         let scaleX = size.width / extent.size.width
         let scaleY = size.height / extent.size.height
         
-        return applying(CGAffineTransform(scaleX: scaleX, y: scaleY))
+        return transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
     }
     
     public func color(foregroundColor: UIColor, backgroundColor: UIColor) -> CIImage? {

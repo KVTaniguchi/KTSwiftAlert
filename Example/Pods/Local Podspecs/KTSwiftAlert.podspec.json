@@ -20,7 +20,7 @@
   "source_files": "KTSwiftAlert/Classes/**/*",
   "dependencies": {
     "URBNSwiftyConvenience": [
-
+      "1.0"
     ]
   }
 }

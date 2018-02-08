@@ -9,9 +9,6 @@
 import Foundation
 
 public typealias InsetConstraint = (constant: CGFloat, priority: UILayoutPriority)
-fileprivate var defaultInsetConstraint: InsetConstraint {
-    return (constant: 0.0, priority: UILayoutPriorityRequired)
-}
 
 public struct InsetConstraints {
     public var top: InsetConstraint
@@ -19,21 +16,21 @@ public struct InsetConstraints {
     public var right: InsetConstraint
     public var bottom: InsetConstraint
     
-    public init(top: InsetConstraint = defaultInsetConstraint, left: InsetConstraint = defaultInsetConstraint, bottom: InsetConstraint = defaultInsetConstraint, right: InsetConstraint = defaultInsetConstraint) {
+    public init(top: InsetConstraint = (constant: 0.0, priority: .required), left: InsetConstraint = (constant: 0.0, priority: .required), bottom: InsetConstraint = (constant: 0.0, priority: .required), right: InsetConstraint = (constant: 0.0, priority: .required)) {
         self.top = top
         self.left = left
         self.bottom = bottom
         self.right = right
     }
     
-    public init(insets: UIEdgeInsets, horizontalPriority: UILayoutPriority = UILayoutPriorityRequired, verticalPriority: UILayoutPriority = UILayoutPriorityRequired) {
+    public init(insets: UIEdgeInsets, horizontalPriority: UILayoutPriority, verticalPriority: UILayoutPriority) {
         self.init(top: (constant: insets.top, priority: verticalPriority),
                   left: (constant: insets.left, priority: horizontalPriority),
                   bottom: (constant: insets.bottom, priority: verticalPriority),
                   right: (constant: insets.right, priority: horizontalPriority))
     }
     
-    public init(insets: UIEdgeInsets, priority: UILayoutPriority = UILayoutPriorityRequired) {
+    public init(insets: UIEdgeInsets, priority: UILayoutPriority = .required) {
         self.init(insets: insets, horizontalPriority: priority, verticalPriority: priority)
     }
 }
@@ -133,5 +130,57 @@ public extension UIStackView {
         for v in subviews {
             addArrangedSubview(v)
         }
+    }
+}
+
+// TODO: Refactor out when we move to swifty 4
+//       Also we could adopt add & subtract capability similar to - https://useyourloaf.com/blog/easier-swift-layout-priorities/
+@available(swift, deprecated: 4.0)
+public struct ConstraintPriority: RawRepresentable {
+    
+    public static let defaultLow: ConstraintPriority = ConstraintPriority(UILayoutPriority.defaultLow.rawValue)
+    public static let defaultHigh: ConstraintPriority = ConstraintPriority(UILayoutPriority.defaultHigh.rawValue)
+    public static let required: ConstraintPriority = ConstraintPriority(UILayoutPriority.required.rawValue)
+    public static let fittingSizeLevel: ConstraintPriority = ConstraintPriority(UILayoutPriority.fittingSizeLevel.rawValue)
+
+    public var rawValue: Float
+
+    public init(_ rawValue: Float) {
+        self.rawValue = rawValue
+    }
+    
+    public init(rawValue: Float) {
+        self.rawValue = rawValue
+    }
+}
+
+extension ConstraintPriority: Equatable, Hashable {
+    public var hashValue: Int {
+        return rawValue.hashValue
+    }
+    
+    public static func == (lhs: ConstraintPriority, rhs: ConstraintPriority) -> Bool {
+        return lhs.rawValue == rhs.rawValue
+    }
+}
+
+public extension ConstraintPriority {
+    static func +(lhs: ConstraintPriority, rhs: Float) -> ConstraintPriority {
+        return ConstraintPriority(lhs.rawValue + rhs)
+    }
+    
+    static func -(lhs: ConstraintPriority, rhs: Float) -> ConstraintPriority {
+        return ConstraintPriority(lhs.rawValue - rhs)
+    }
+}
+
+
+public extension NSLayoutConstraint {
+    
+    // TODO: Refactor out when we move to swifty 4
+    @available(swift, deprecated: 4.0)
+    public func activate(withPriority constraintPriority: ConstraintPriority) {
+        self.priority = UILayoutPriority(constraintPriority.rawValue)
+        isActive = true
     }
 }

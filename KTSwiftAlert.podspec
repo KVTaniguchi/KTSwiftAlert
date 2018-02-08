@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'KTSwiftAlert/Classes/**/*'
 
-  s.dependency 'URBNSwiftyConvenience'
+  s.dependency 'URBNSwiftyConvenience', '1.0'
 end
