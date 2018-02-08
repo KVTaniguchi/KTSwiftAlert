@@ -68,16 +68,16 @@
 		048B6A4CB5430456CCCC927E76A7F207 /* CollectionViewHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewHelpers.swift; path = URBNSwiftyConvenience/Classes/CollectionViewHelpers.swift; sourceTree = "<group>"; };
 		07BA4B82D5BA749D896398C3F0048679 /* URBNSwiftyConvenience-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URBNSwiftyConvenience-umbrella.h"; sourceTree = "<group>"; };
 		0B89ED61DE307AADD93EB49AA6CABCCD /* Pods-KTSwiftAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTSwiftAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0C3FF26034E7DB76874639FB3E722C28 /* KTSwiftAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KTSwiftAlert.framework; path = KTSwiftAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3FF26034E7DB76874639FB3E722C28 /* KTSwiftAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTSwiftAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B11E8A84D662D45F9B51DEF22E209B /* DictionaryConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryConvenience.swift; path = URBNSwiftyConvenience/Classes/DictionaryConvenience.swift; sourceTree = "<group>"; };
-		1DC57BDA9D34549D05020A80EA76BC01 /* KTSwiftAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = KTSwiftAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1DC57BDA9D34549D05020A80EA76BC01 /* KTSwiftAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KTSwiftAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1EB5E87EAE15D1C69054E1C10DA3825F /* URBNSwiftyConvenience-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URBNSwiftyConvenience-dummy.m"; sourceTree = "<group>"; };
 		258ECC50EA35409837BA1BE976790D5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2688ED3E5888AD6CD30486F616F67079 /* KTSwiftAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KTSwiftAlert.modulemap; sourceTree = "<group>"; };
-		38A3E91DFEBADB243E4714651B899F7C /* Pods-KTSwiftAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KTSwiftAlert_Example.modulemap"; sourceTree = "<group>"; };
+		2688ED3E5888AD6CD30486F616F67079 /* KTSwiftAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KTSwiftAlert.modulemap; sourceTree = "<group>"; };
+		38A3E91DFEBADB243E4714651B899F7C /* Pods-KTSwiftAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTSwiftAlert_Example.modulemap"; sourceTree = "<group>"; };
 		3A55A8389E1F2F6B78FC90E26ECDD756 /* AlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = KTSwiftAlert/Classes/AlertView.swift; sourceTree = "<group>"; };
 		3AA7AF8BFE09862A3B2152C7E617DFFB /* Pods-KTSwiftAlert_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTSwiftAlert_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3EDDFB56F4DC104DD0D87D37E7AEDA42 /* Pods-KTSwiftAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KTSwiftAlert_Tests.modulemap"; sourceTree = "<group>"; };
+		3EDDFB56F4DC104DD0D87D37E7AEDA42 /* Pods-KTSwiftAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTSwiftAlert_Tests.modulemap"; sourceTree = "<group>"; };
 		405A2153B5ABB46310B4555E49E20F39 /* NotificationConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationConvenience.swift; path = URBNSwiftyConvenience/Classes/NotificationConvenience.swift; sourceTree = "<group>"; };
 		4129D8A143EE32C97365729F88B4FAFF /* QRCodeGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeGenerator.swift; path = URBNSwiftyConvenience/Classes/QRCodeGenerator.swift; sourceTree = "<group>"; };
 		43EAA80AA29AB7DADC3EC69E5952FA02 /* AlertConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertConfiguration.swift; path = KTSwiftAlert/Classes/AlertConfiguration.swift; sourceTree = "<group>"; };
@@ -85,20 +85,20 @@
 		47C91BE10976CB51A97C70563C44C0CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		49E8ADBFBCF168153E9F0CFAE0F9083A /* AlertButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertButton.swift; path = KTSwiftAlert/Classes/AlertButton.swift; sourceTree = "<group>"; };
 		4B27314C2698B1206C9215D7EA67B5DA /* Pods-KTSwiftAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTSwiftAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4CD82AF6D4B769CEDB431EEE6736E3C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4D3300192AB8CDF7BBCFE5F16A87C650 /* URBNSwiftyConvenience.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = URBNSwiftyConvenience.modulemap; sourceTree = "<group>"; };
+		4CD82AF6D4B769CEDB431EEE6736E3C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D3300192AB8CDF7BBCFE5F16A87C650 /* URBNSwiftyConvenience.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = URBNSwiftyConvenience.modulemap; sourceTree = "<group>"; };
 		56FD21395FB7FF476FB4B69EE289129E /* URBNSwiftyConvenience-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URBNSwiftyConvenience-prefix.pch"; sourceTree = "<group>"; };
-		5EF68416141787BDF895B32E30A8BA0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5EF68416141787BDF895B32E30A8BA0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		67FC5AA88CFE387DFE50EA3568012F8D /* AlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertController.swift; path = KTSwiftAlert/Classes/AlertController.swift; sourceTree = "<group>"; };
 		6ECD1ED124319C3A1D58BF484033DCBB /* KTSwiftAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTSwiftAlert-umbrella.h"; sourceTree = "<group>"; };
 		7EF9FCD05E705343556AD9A478BF6A02 /* DateConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateConvenience.swift; path = URBNSwiftyConvenience/Classes/DateConvenience.swift; sourceTree = "<group>"; };
 		7FFE56978160008C5E38449E3BAE25FA /* Pods-KTSwiftAlert_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTSwiftAlert_Tests-dummy.m"; sourceTree = "<group>"; };
-		80B7FF53285F726952D70175542DD58B /* Pods_KTSwiftAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KTSwiftAlert_Tests.framework; path = "Pods-KTSwiftAlert_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B7FF53285F726952D70175542DD58B /* Pods_KTSwiftAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTSwiftAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403BFB56D8A22BC0E7721535DE93C7C /* UIImageConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageConvenience.swift; path = URBNSwiftyConvenience/Classes/UIImageConvenience.swift; sourceTree = "<group>"; };
 		858E1D3EF9C7CCA736BB02D4EF5D45AF /* Pods-KTSwiftAlert_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTSwiftAlert_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		877A1093E2BA146D40E3B10720AB8C74 /* Pods-KTSwiftAlert_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTSwiftAlert_Example-umbrella.h"; sourceTree = "<group>"; };
 		928363BB6713682F1EAB6917D3169E8F /* Pods-KTSwiftAlert_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTSwiftAlert_Example-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9587B8D0C46B943C8CC00D3179DCFFB0 /* Pods-KTSwiftAlert_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTSwiftAlert_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A3A3A06BD64138BDE431C836EF2BD7FA /* Pods-KTSwiftAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTSwiftAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A4D3568FBD0A468FE5631653AF63F9A5 /* URBNSwiftyConvenience.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URBNSwiftyConvenience.xcconfig; sourceTree = "<group>"; };
@@ -108,11 +108,11 @@
 		B40F387D8723406EB504F8DE7707AF1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB98D8E43DA994A0F7E7E1F537725A68 /* KTSwiftAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTSwiftAlert-dummy.m"; sourceTree = "<group>"; };
 		BCDB5DC54BC28DD007587C1F72E76969 /* ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultType.swift; path = URBNSwiftyConvenience/Classes/ResultType.swift; sourceTree = "<group>"; };
-		BF92488368555B84AC9102A99A191866 /* Pods_KTSwiftAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KTSwiftAlert_Example.framework; path = "Pods-KTSwiftAlert_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF92488368555B84AC9102A99A191866 /* Pods_KTSwiftAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTSwiftAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BCCE89A3CFFAA5EC077B227E932A57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FA2F46691F1C3551C07A2A74066CF6 /* AlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertAction.swift; path = KTSwiftAlert/Classes/AlertAction.swift; sourceTree = "<group>"; };
 		CBA860302070549627BDDF5FB1DF0B63 /* Pods-KTSwiftAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTSwiftAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D898CA91E063EEF30D1FD49B4F996997 /* URBNSwiftyConvenience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URBNSwiftyConvenience.framework; path = URBNSwiftyConvenience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D898CA91E063EEF30D1FD49B4F996997 /* URBNSwiftyConvenience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URBNSwiftyConvenience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FEB157FE6A60A100743AC974DD89EC /* Pods-KTSwiftAlert_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTSwiftAlert_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E2BB414D9DAC55265EECB2AACF915739 /* Pods-KTSwiftAlert_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTSwiftAlert_Tests-resources.sh"; sourceTree = "<group>"; };
 		E3D0B3781A5F3157DD02D9732F66BDB4 /* Pods-KTSwiftAlert_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTSwiftAlert_Example-dummy.m"; sourceTree = "<group>"; };
@@ -214,7 +214,6 @@
 				8403BFB56D8A22BC0E7721535DE93C7C /* UIImageConvenience.swift */,
 				F4CE9FA79CCDADC60B694E1BDF3E21AD /* Support Files */,
 			);
-			name = URBNSwiftyConvenience;
 			path = URBNSwiftyConvenience;
 			sourceTree = "<group>";
 		};
@@ -454,6 +453,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					487A2C7FA95413C866B25EADCE0E18E8 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -573,7 +577,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -727,7 +732,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -91,7 +91,7 @@ class AlertController: NSObject {
      *  Called when a new window becomes active.
      *  Specifically used to detect new alertViews or actionSheets so we can dismiss ourselves
      **/
-    func resignActive(note: Notification) {
+    @objc func resignActive(note: Notification) {
         guard let noteWindow = note.object as? UIWindow, noteWindow != alertWindow, noteWindow != presentingWindow else { return }
         
         if let nextAVC = queue.first {
