@@ -1,0 +1,19 @@
+PODS:
+  - KTSwiftAlert (0.1.0):
+    - URBNSwiftyConvenience
+  - URBNSwiftyConvenience (1.0)
+
+DEPENDENCIES:
+  - KTSwiftAlert (from `../`)
+
+EXTERNAL SOURCES:
+  KTSwiftAlert:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KTSwiftAlert: 736f7931c635fc1291bd1cc2f53e02b0e3ef26dc
+  URBNSwiftyConvenience: c348a56166f4bd599e8c700512d5f35c3c697e34
+
+PODFILE CHECKSUM: 693e6d2e6ed08ed83a8f6328aa56a9012f68f8f5
+
+COCOAPODS: 1.4.0
