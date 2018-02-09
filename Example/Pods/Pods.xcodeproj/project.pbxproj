@@ -73,7 +73,7 @@
 		0007390312675AB465C86A956110B6D5 /* KTSwiftAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTSwiftAlert-prefix.pch"; sourceTree = "<group>"; };
 		0B89ED61DE307AADD93EB49AA6CABCCD /* Pods-KTSwiftAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTSwiftAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0C3FF26034E7DB76874639FB3E722C28 /* KTSwiftAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTSwiftAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DC57BDA9D34549D05020A80EA76BC01 /* KTSwiftAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KTSwiftAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1DC57BDA9D34549D05020A80EA76BC01 /* KTSwiftAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KTSwiftAlert.podspec; sourceTree = "<group>"; };
 		258ECC50EA35409837BA1BE976790D5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2688ED3E5888AD6CD30486F616F67079 /* KTSwiftAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KTSwiftAlert.modulemap; sourceTree = "<group>"; };
 		38A3E91DFEBADB243E4714651B899F7C /* Pods-KTSwiftAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTSwiftAlert_Example.modulemap"; sourceTree = "<group>"; };
