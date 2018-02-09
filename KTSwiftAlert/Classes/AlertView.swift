@@ -59,7 +59,7 @@ class AlertView: UIView {
         
         stackView.spacing = spacing
         
-        stackView.wrap(in: self, with: InsetConstraints(insets: insets, priority: UILayoutPriorityDefaultHigh))
+        stackView.wrap(in: self, with: InsetConstraints(insets: insets, priority: UILayoutPriority.defaultHighUILayoutPriority.defaultHigh))
     }
     
     required init?(coder aDecoder: NSCoder) {
