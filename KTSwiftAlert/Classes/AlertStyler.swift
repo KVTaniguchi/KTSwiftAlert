@@ -146,7 +146,7 @@ extension AlertStyler {
         /**
          * Button container inset constraints
          */
-        public var containerInsetConstraints = InsetConstraints(insets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), priority: UILayoutPriorityDefaultHigh)
+        public var containerInsetConstraints = InsetConstraints(insets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), priority: UILayoutPriority.defaultHigh)
         
         public var spacing: CGFloat = 10.0 {
             didSet {
@@ -172,7 +172,7 @@ extension AlertStyler {
         /**
          * UIEdgeInsets used at the external margins for the buttons of the alert's buttons
          */
-        public var insetConstraints = InsetConstraints(insets: UIEdgeInsets.zero, priority: UILayoutPriorityDefaultHigh)
+        public var insetConstraints = InsetConstraints(insets: UIEdgeInsets.zero, priority: UILayoutPriority.defaultHigh)
         
         /**
          * Width of the alert's button's border layer
@@ -320,7 +320,7 @@ extension AlertStyler {
         /**
          *  Layout Margins for the alert title
          */
-        public var insetConstraints = InsetConstraints(insets: UIEdgeInsets.zero, priority: UILayoutPriorityDefaultHigh)
+        public var insetConstraints = InsetConstraints(insets: UIEdgeInsets.zero, priority: UILayoutPriority.defaultHigh)
     }
     
     public struct Message {
@@ -347,7 +347,7 @@ extension AlertStyler {
         /**
          *  Layout Margins for the alert message
          */
-        public var insetConstraints = InsetConstraints(insets: UIEdgeInsets.zero, priority: UILayoutPriorityDefaultHigh)
+        public var insetConstraints = InsetConstraints(insets: UIEdgeInsets.zero, priority: UILayoutPriority.defaultHigh)
     }
     
     public struct TextField {

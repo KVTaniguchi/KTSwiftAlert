@@ -59,7 +59,7 @@ class AlertView: UIView {
         
         stackView.spacing = spacing
         
-        stackView.wrap(in: self, with: InsetConstraints(insets: insets, priority: UILayoutPriorityDefaultHigh))
+        stackView.wrap(in: self, with: InsetConstraints(insets: insets, priority: UILayoutPriority.defaultHigh))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -74,11 +74,16 @@ extension AlertView {
             titleLabel.backgroundColor = configuration.styler.title.backgroundColor
             titleLabel.textAlignment = configuration.styler.title.alignment
             titleLabel.font = configuration.styler.title.font
-            titleLabel.numberOfLines = 2
+            titleLabel.numberOfLines = 0
             titleLabel.lineBreakMode = .byWordWrapping
             titleLabel.textColor = configuration.styler.title.color
             titleLabel.text = title
-            stackView.addArrangedSubview(titleLabel.wrapInNewView(with: configuration.styler.title.insetConstraints))
+            
+            let titleInsetConstraints = configuration.styler.title.insetConstraints
+            let titleContainer = UIView()
+            titleContainer.embed(subview: titleLabel, insets: UIEdgeInsets(top: titleInsetConstraints.top.constant, left: titleInsetConstraints.left.constant, bottom: titleInsetConstraints.bottom.constant, right: titleInsetConstraints.right.constant))
+            
+            stackView.addArrangedSubview(titleContainer)
         }
         
         if let message = configuration.message, !message.isEmpty {
@@ -96,7 +101,12 @@ extension AlertView {
             let maxHeight = messageSize.height > maxTextViewH ? maxTextViewH : messageSize.height
             
             messageView.heightAnchor.constraint(equalToConstant: maxHeight).isActive = true
-            stackView.addArrangedSubview(messageView.wrapInNewView(with: configuration.styler.message.insetConstraints))
+            
+            let messageContainer = UIView()
+            let messageInsetConstraints = configuration.styler.message.insetConstraints
+            messageContainer.embed(subview: messageView, insets: UIEdgeInsets(top: messageInsetConstraints.top.constant, left: messageInsetConstraints.left.constant, bottom: messageInsetConstraints.bottom.constant, right: messageInsetConstraints.right.constant))
+            
+            stackView.addArrangedSubview(messageContainer)
         }
         
         if !configuration.textFields.isEmpty {
