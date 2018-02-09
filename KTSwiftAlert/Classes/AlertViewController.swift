@@ -180,7 +180,7 @@ extension AlertViewController {
             
             UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: initVel, options: [], animations: bounceAnimation, completion: { (complete) in
                 if complete {
-                    completion?(<#Void#>)
+                    completion?()
                 }
             })
             
@@ -189,7 +189,7 @@ extension AlertViewController {
         else {
             fadeAnimation()
             bounceAnimation()
-            completion?(<#Void#>)
+            completion?()
         }
     }
     
@@ -250,7 +250,7 @@ extension AlertViewController {
         show()
     }
     
-    @objc @objc @objc public func dismissAlert(sender: Any) {
+    @objc public func dismissAlert(sender: Any) {
         view.endEditing(true)
         
         if !alertConfiguration.isActiveAlert && alertConfiguration.type != .customButton && alertConfiguration.type != .fullCustom {
