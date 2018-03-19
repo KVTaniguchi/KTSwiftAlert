@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KTSwiftAlert'
-  s.version          = '2.0'
+  s.version          = '1.0'
   s.summary          = 'A simple configurable alert in Swift.'
 
 
