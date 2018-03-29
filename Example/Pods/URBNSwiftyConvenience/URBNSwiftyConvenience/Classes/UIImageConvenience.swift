@@ -13,7 +13,7 @@ public extension UIImage {
     public typealias URBNConvenienceImageDrawBlock = (_ rect: CGRect, _ context: CGContext) -> ()
     
     public func tintedImage(color: UIColor) -> UIImage? {
-        UIGraphicsBeginImageContext(self.size)
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
         let context = UIGraphicsGetCurrentContext()
 
         context?.scaleBy(x: 1.0, y: -1.0)

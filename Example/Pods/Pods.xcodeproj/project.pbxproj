@@ -73,7 +73,7 @@
 		0007390312675AB465C86A956110B6D5 /* KTSwiftAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTSwiftAlert-prefix.pch"; sourceTree = "<group>"; };
 		0B89ED61DE307AADD93EB49AA6CABCCD /* Pods-KTSwiftAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTSwiftAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0C3FF26034E7DB76874639FB3E722C28 /* KTSwiftAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTSwiftAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DC57BDA9D34549D05020A80EA76BC01 /* KTSwiftAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KTSwiftAlert.podspec; sourceTree = "<group>"; };
+		1DC57BDA9D34549D05020A80EA76BC01 /* KTSwiftAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KTSwiftAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		258ECC50EA35409837BA1BE976790D5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2688ED3E5888AD6CD30486F616F67079 /* KTSwiftAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KTSwiftAlert.modulemap; sourceTree = "<group>"; };
 		38A3E91DFEBADB243E4714651B899F7C /* Pods-KTSwiftAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTSwiftAlert_Example.modulemap"; sourceTree = "<group>"; };
@@ -470,7 +470,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -605,6 +605,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		5292C20D5A618A6316898F1F59ED9C73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFE47BCFB3587EE664A4F77A2B41E4B /* KTSwiftAlert.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KTSwiftAlert/KTSwiftAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTSwiftAlert/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KTSwiftAlert/KTSwiftAlert.modulemap";
+				PRODUCT_NAME = KTSwiftAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		61A8DE5C9324FA4B9E6B4AC6E388AFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -782,6 +813,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -852,69 +884,7 @@
 			};
 			name = Debug;
 		};
-		C47EE11DE4205DE24C89BD7006E2CC91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 849E23651E2915C76AA5FACFEC3D06E0 /* URBNSwiftyConvenience.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/URBNSwiftyConvenience/URBNSwiftyConvenience-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/URBNSwiftyConvenience/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/URBNSwiftyConvenience/URBNSwiftyConvenience.modulemap";
-				PRODUCT_NAME = URBNSwiftyConvenience;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DCB139D2D32205F70B19B82EE67041A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBFE47BCFB3587EE664A4F77A2B41E4B /* KTSwiftAlert.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KTSwiftAlert/KTSwiftAlert-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KTSwiftAlert/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KTSwiftAlert/KTSwiftAlert.modulemap";
-				PRODUCT_NAME = KTSwiftAlert;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F189A519B30904DE2300A7D50745692D /* Release */ = {
+		C08413220629A93F0B1FEB5EB1FEAEA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBFE47BCFB3587EE664A4F77A2B41E4B /* KTSwiftAlert.xcconfig */;
 			buildSettings = {
@@ -945,6 +915,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C47EE11DE4205DE24C89BD7006E2CC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E23651E2915C76AA5FACFEC3D06E0 /* URBNSwiftyConvenience.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/URBNSwiftyConvenience/URBNSwiftyConvenience-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/URBNSwiftyConvenience/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/URBNSwiftyConvenience/URBNSwiftyConvenience.modulemap";
+				PRODUCT_NAME = URBNSwiftyConvenience;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -979,8 +980,8 @@
 		CF3022550AB3061E11E4349DBDA65A47 /* Build configuration list for PBXNativeTarget "KTSwiftAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCB139D2D32205F70B19B82EE67041A4 /* Debug */,
-				F189A519B30904DE2300A7D50745692D /* Release */,
+				5292C20D5A618A6316898F1F59ED9C73 /* Debug */,
+				C08413220629A93F0B1FEB5EB1FEAEA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
