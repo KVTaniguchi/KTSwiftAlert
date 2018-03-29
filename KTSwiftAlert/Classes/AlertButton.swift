@@ -38,6 +38,8 @@ public class AlertButton: UIButton {
         setTitleColor(styler.button.selectedTitleColor, for: .selected)
         backgroundColor = styler.buttonBackgroundColor(actionType: action.type, isEnabled: action.isEnabled)
         titleLabel?.font = styler.button.font
+        titleLabel?.adjustsFontSizeToFitWidth = true
+        titleLabel?.minimumScaleFactor = 0.5
         layer.cornerRadius = styler.button.cornerRadius
         layer.borderWidth = styler.button.borderWidth
         layer.borderColor = styler.button.borderColor.cgColor
