@@ -22,7 +22,7 @@ pod 'KTSwiftAlert'
 
 ## Author
 
-kvtaniguchi, ktaniguchi@urbn.com
+kvtaniguchi, kv.taniguchi@icloud.com
 
 ## License
 
