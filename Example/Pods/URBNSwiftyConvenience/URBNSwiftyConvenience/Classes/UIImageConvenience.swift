@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import UIKit
 
 public extension UIImage {
 
@@ -185,7 +185,7 @@ public extension UIImage {
         return transform
     }
 
-    public func orientImage(orientation: UIImageOrientation) -> UIImage? {
+    public func orientImage(orientation: UIImage.Orientation) -> UIImage? {
         if imageOrientation == orientation {
             return self
         }

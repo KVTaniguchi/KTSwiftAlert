@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import UIKit
 
 extension CharacterSet {
     public static var hexValues: CharacterSet {
@@ -19,11 +19,11 @@ extension UIColor {
     
     public convenience init(hexString: String) {
         let sanitized = hexString.components(separatedBy: CharacterSet.hexValues.inverted).joined()
-        let count = sanitized.characters.count
+        let count = sanitized.count
         var rgb: UInt32 = 0
         
         if (count == 6 || count == 8), Scanner(string: sanitized).scanHexInt32(&rgb) {
-            if sanitized.characters.count == 6 {
+            if sanitized.count == 6 {
                 self.init(rgb: rgb)
             }
             else {

@@ -64,10 +64,10 @@ extension Array where Element == UIView {
     public var maxIntrinsicHeight: CGFloat {
         // Check to see if any are UIViewNoIntrinsicMetric
         for view in self {
-            if view.intrinsicContentSize.height == UIViewNoIntrinsicMetric { return UIViewNoIntrinsicMetric }
+            if view.intrinsicContentSize.height == UIView.noIntrinsicMetric { return UIView.noIntrinsicMetric }
         }
         
-        return map{ $0.intrinsicContentSize.height }.max() ?? UIViewNoIntrinsicMetric
+        return map{ $0.intrinsicContentSize.height }.max() ?? UIView.noIntrinsicMetric
     }
 }
 

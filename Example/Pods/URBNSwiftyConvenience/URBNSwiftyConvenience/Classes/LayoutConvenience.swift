@@ -35,7 +35,7 @@ public struct InsetConstraints {
     }
 }
 
-public func activateVFL(format: String, options: NSLayoutFormatOptions = [], metrics: [String : Any]? = nil, views: [String : Any]) {
+public func activateVFL(format: String, options: NSLayoutConstraint.FormatOptions = [], metrics: [String : Any]? = nil, views: [String : Any]) {
     NSLayoutConstraint.activate(
         NSLayoutConstraint.constraints(
             withVisualFormat: format,
@@ -131,6 +131,13 @@ public extension UIStackView {
             addArrangedSubview(v)
         }
     }
+    
+    public func removeAllArrangedSubviews() {
+        arrangedSubviews.forEach {
+            self.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        }
+    }
 }
 
 // TODO: Refactor out when we move to swifty 4
@@ -154,33 +161,22 @@ public struct ConstraintPriority: RawRepresentable {
     }
 }
 
-extension ConstraintPriority: Equatable, Hashable {
-    public var hashValue: Int {
-        return rawValue.hashValue
+public extension UILayoutPriority {
+    static func +(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
+        return UILayoutPriority(lhs.rawValue + rhs)
     }
     
-    public static func == (lhs: ConstraintPriority, rhs: ConstraintPriority) -> Bool {
-        return lhs.rawValue == rhs.rawValue
-    }
-}
-
-public extension ConstraintPriority {
-    static func +(lhs: ConstraintPriority, rhs: Float) -> ConstraintPriority {
-        return ConstraintPriority(lhs.rawValue + rhs)
+    static func -(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
+        return UILayoutPriority(lhs.rawValue - rhs)
     }
     
-    static func -(lhs: ConstraintPriority, rhs: Float) -> ConstraintPriority {
-        return ConstraintPriority(lhs.rawValue - rhs)
-    }
 }
-
 
 public extension NSLayoutConstraint {
     
-    // TODO: Refactor out when we move to swifty 4
-    @available(swift, deprecated: 4.0)
-    public func activate(withPriority constraintPriority: ConstraintPriority) {
-        self.priority = UILayoutPriority(constraintPriority.rawValue)
+    @available(swift 4.0)
+    public func activate(withPriority priority: UILayoutPriority) {
+        self.priority = priority
         isActive = true
     }
 }

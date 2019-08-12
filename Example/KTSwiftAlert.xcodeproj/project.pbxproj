@@ -283,7 +283,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KTSwiftAlert_Example/Pods-KTSwiftAlert_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KTSwiftAlert_Example/Pods-KTSwiftAlert_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KTSwiftAlert/KTSwiftAlert.framework",
 				"${BUILT_PRODUCTS_DIR}/URBNSwiftyConvenience/URBNSwiftyConvenience.framework",
 			);
@@ -294,7 +294,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KTSwiftAlert_Example/Pods-KTSwiftAlert_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KTSwiftAlert_Example/Pods-KTSwiftAlert_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A3E1137ECA637EF406F0F886 /* [CP] Check Pods Manifest.lock */ = {
